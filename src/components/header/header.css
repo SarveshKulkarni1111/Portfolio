@@ -1,29 +1,46 @@
-.rounded-image {
-    border-radius: 50%; 
-    width: 35%; 
-  height: auto;
-  }
-
-  .header-container{
-    height: 90vh;
-    background-color: #F5FCFF;
-    padding-top: 15%;
-  }
-
-  /* YourComponent.css */
-  /* .custom-h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px; 
-  line-height: 1.4; 
-} */
-
-/* .row {
+.header-container {
+  height: 90vh;
+  background-color: #F5FCFF;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.col {
-  flex: 1;
-  justify-content: center;
-} */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+  margin-top: 20px; 
+  margin-left: 80px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .rounded-image {
+    width: 50%; 
+    margin-right: 72px;
+}
+
+  .header-container {
+      padding-top: 10%; 
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .rounded-image {
+        width: 70%; 
+        margin-top: 10px;
+    }
+
+  .header-container {
+      padding-top: 5%; 
+      flex-direction: column;
+  }
+}

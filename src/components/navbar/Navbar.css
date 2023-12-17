@@ -1,16 +1,17 @@
 /* Style the navbar container */
 .navbar {
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
     padding: 10px; /* Padding around the content */
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space items evenly */
     align-items: center; /* Center items vertically */
+    border: 1px solid;
+    border-color: #cce6f0;
 }
 
 /* Style the heading element */
 .navbar h4 {
     margin-left: 20px; /* Remove default margin */
+    color: #006B6A;
 }
 
 /* Style the navigation list */
@@ -27,11 +28,34 @@
 
 /* Style the button */
 .navbar button {
-    background-color: #4CAF50; /* Button background color */
+    background-color: #006B6A; /* Button background color */
     color: white; /* Button text color */
     padding: 8px 16px; /* Padding inside the button */
     border: none; /* Remove default button border */
     border-radius: 4px; /* Optional: Add border radius for rounded corners */
     cursor: pointer; /* Show pointer cursor on hover */
     margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Stack items vertically on smaller screens */
+        max-height: 100px;
+    }
+    .navbar button{
+        margin-top: -70px;
+    }
+    .navbar ul {
+        list-style: none; /* Remove default list styles */
+        display: flex; /* Use flexbox for layout */
+    }
+    
+    /* Style the list items */
+    .navbar li {
+        margin-right: 20px; /* Add spacing between list items */
+        margin-left: 2px;
+        margin-top: -12px;
+    }
+
+    
 }

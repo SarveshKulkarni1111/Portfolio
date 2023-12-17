@@ -1,6 +1,7 @@
 .contact-form {
     max-width: 730px;
     margin: auto;
+    margin-top: 50px;
     margin-bottom: 75px;
   }
 
@@ -55,3 +56,16 @@
     cursor: pointer;
   }
   
+  @media (max-width: 768px) {
+    .contact-form {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .form-control,
+    .border-color {
+        width: calc(100% - 16px);
+    }
+
+    
+}

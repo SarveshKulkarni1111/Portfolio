@@ -1,0 +1,62 @@
+/* Card.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 160px;
+    margin-left: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .card1 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    font-size: 18px;
+  }
+  ul {
+    list-style: none; /* Remove default list styles */
+    padding: 20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center;
+}
+li {
+    
+    margin-right: 20px; /* Add spacing between list items */
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .card, .card1 {
+      margin: 20px; /* Adjust the margin for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    ul {
+      flex-direction:row; /* Change the direction for smaller screens */
+      align-items: center;
+    }
+    
+    li {
+      margin: 10px; /* Adjust spacing for smaller screens */
+    }
+    li svg {
+        width: 25px; 
+        height: 25px;
+    }
+  }
+  
