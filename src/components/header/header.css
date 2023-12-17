@@ -20,6 +20,32 @@
   margin-left: 80px;
 }
 
+/* Style the link */
+a {
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Style the button */
+.button-cv {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 22px !important;
+  background-color: #006B6A; /* Green color, you can change it to your preferred color */
+  color: #fff; /* White text color */
+  transition: background-color 0.3s;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #035453; /* Darker green on hover, adjust as needed */
+}
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .rounded-image {

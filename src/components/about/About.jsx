@@ -6,8 +6,9 @@ const About = () => {
     <div>
     <div className="card">
     <h1>About me</h1>
-    <p>I'm a passionate web developer. I always had a facination toward technology and Iam trying to make my passion as my carrier.I have a solid understanding of front-end development principles and frameworks, which allows me to create visually appealing and user-friendly websites.
-    I'm constantly exploring new web technologies and design principles to stay at the forefront of this dynamic field. Let's build something amazing together!
+    <p>I am a passionate web developer with a fascination for technology, aiming to turn my passion into a career. I possess a solid understanding of front-end development principles and frameworks, enabling me to create visually appealing and user-friendly websites.
+
+I am continually exploring new web technologies and design principles to stay at the forefront of this dynamic field. Let's build something amazing together!
 </p>
 </div>
 
