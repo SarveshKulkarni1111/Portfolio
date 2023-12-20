@@ -24,7 +24,7 @@ const CustomNavbar = () => {
           <Nav className='ms-auto'>
             <Nav.Link>
               <Link
-                className='nav-link'
+                className='nav-link text-black'
                 activeClass='active'
                 to='home'
                 spy={true}
@@ -36,7 +36,7 @@ const CustomNavbar = () => {
             </Nav.Link>
             <Nav.Link>
               <Link
-                className='nav-link'
+                className='nav-link text-black' 
                 to='about'
                 spy={true}
                 smooth={true}
@@ -47,7 +47,7 @@ const CustomNavbar = () => {
             </Nav.Link>
             <Nav.Link>
               <Link
-                className='nav-link'
+                className='nav-link text-black'
                 to='projects'
                 spy={true}
                 smooth={true}
@@ -58,7 +58,7 @@ const CustomNavbar = () => {
             </Nav.Link>
             <Nav.Link>
               <Link
-                className='nav-link'
+                className='nav-link text-black'
                 to='awards'
                 spy={true}
                 smooth={true}
