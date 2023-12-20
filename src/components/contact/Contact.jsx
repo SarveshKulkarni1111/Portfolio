@@ -292,7 +292,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div id='contact'>
       <h5>Get in touch</h5>
       <h1>Contact me</h1>
       <form className="contact-form" ref={form} onSubmit={handleSubmit}>

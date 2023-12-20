@@ -10,7 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 const Awards = () => {
     const images = [award1];
   return (
-    <div>
+    <div id='awards'>
     <h1>Awards/Honours</h1>
     <div className="responsive-slider-container">
       <Carousel showThumbs={false}>

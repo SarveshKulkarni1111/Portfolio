@@ -1,3 +1,5 @@
+/* Your existing styles */
+
 /* Style the navbar container */
 .navbar {
     padding: 10px; /* Padding around the content */
@@ -6,6 +8,16 @@
     align-items: center; /* Center items vertically */
     border: 1px solid;
     border-color: #cce6f0;
+}
+
+
+.nav-link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.link1{
+    text-decoration: none;
+    color: black;
 }
 
 /* Style the heading element */
@@ -30,7 +42,7 @@
 .navbar button {
     background-color: #006B6A; /* Button background color */
     color: white; /* Button text color */
-    padding: 8px 16px; /* Padding inside the button */
+    /* padding: 2px 12px;  */
     border: none; /* Remove default button border */
     border-radius: 4px; /* Optional: Add border radius for rounded corners */
     cursor: pointer; /* Show pointer cursor on hover */
@@ -38,27 +50,87 @@
     &:hover {
         background-color: #035453;
       }
+      text-wrap: nowrap; /* Deprecated, use white-space */
+      white-space: nowrap; /* Prevent text wrapping */
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; /* Center the button horizontally */
+    }
+    
+/* New styles for responsive navbar */
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .navbar {
+      flex-direction: row;
+    }
+  
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+  
+    .bar.open:nth-child(1) {
+        transform: rotate(-45deg) translate(-3px, 6px);
+      }
+    
+      .bar.open:nth-child(2) {
+        transform: rotate(45deg) translate(-3px, -6px);
+      }
+    
+      .bar.open:nth-child(3) {
+        display: none; /* Hide the third bar for a proper cross */
+      }
+
+    /* Display li and button in a row for desktop view */
+    .nav-links ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-links li {
+      margin: 0 10px; /* Adjust spacing between list items */
+    }
+
+    .navbar button {
+        margin-right: 34%;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: row; /* Stack items vertically on smaller screens */
-        max-height: 100px;
-    }
-    .navbar button{
-        margin-top: -70px;
-    }
-    .navbar ul {
-        list-style: none; /* Remove default list styles */
-        display: flex; /* Use flexbox for layout */
-    }
-    
-    /* Style the list items */
-    .navbar li {
-        margin-right: 20px; /* Add spacing between list items */
-        margin-left: 2px;
-        margin-top: -12px;
-    }
+/* Add this to your existing styles */
 
-    
+/* Push home page content when the navbar is open */
+.push-content {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links.open + .push-content {
+    transform: translateX(250px); /* Adjust the value based on your design */
+  }
+  
+
 }
