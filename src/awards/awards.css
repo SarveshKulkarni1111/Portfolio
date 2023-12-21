@@ -30,6 +30,12 @@
       height: auto;
     }
   } */
+
+
+  #awards{
+    height: 100vh;
+  }
+
   .responsive-slider-container {
     max-width: 100%;
     margin: auto;
@@ -52,6 +58,10 @@
       height: auto;
       margin-top: 20px;
       margin-bottom: 40px;
+
+    }
+    #awards{
+      height: 55vh;
     }
   }
 
@@ -61,5 +71,8 @@
       margin-bottom: 40px;
       max-width: 400px;
       height: auto;
+    }
+    #awards{
+      height: 55vh;
     }
   }

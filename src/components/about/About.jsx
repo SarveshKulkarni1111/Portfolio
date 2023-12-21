@@ -6,7 +6,6 @@ import image3 from "../../assets/profile3.jpg";
 const About = () => {
   return (
     <div id='about'>
-    {/* <img src={image2} alt='profile img' className='img-profile'></img> */}
     <div className="card">
     <h1>About me</h1>
     <p>I am a passionate web developer with a fascination for technology, aiming to turn my passion into a career. I possess a solid understanding of front-end development principles and frameworks, enabling me to create visually appealing and user-friendly websites.

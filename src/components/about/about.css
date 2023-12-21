@@ -1,19 +1,19 @@
 /* Card.css */
 
+#about{
+  height: 75vh;
+}
+
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
     margin-top: 140px;
     margin-left: 700px;
+    margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  .img-profile{
-    max-width: 300px;
-    height: auto;
-    margin-right: 800px;
-    margin-top: 300px;
-  }
+  
 
   .card1 {
     border: 1px solid #ccc;
@@ -21,6 +21,7 @@
     padding: 20px;
     margin-top: 70px;
     margin-left: 700px;
+    margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
@@ -48,6 +49,9 @@ li {
     .card, .card1 {
       margin: 20px; /* Adjust the margin for smaller screens */
     }
+    #about{
+      height: 100vh;
+    }
   }
   
   @media (max-width: 480px) {
@@ -62,6 +66,9 @@ li {
     li svg {
         width: 25px; 
         height: 25px;
+    }
+    #about{
+      height: 100vh;
     }
   }
   

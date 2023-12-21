@@ -12,7 +12,7 @@
     }
   }
   .project-container{
-    margin: 20px;
+    /* margin: 20px; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -69,3 +69,18 @@
   .cardP-button-a{
     text-decoration: none; 
     color: inherit;  }
+
+
+    @media (max-width: 768px) {
+     
+      .cardP{
+        margin: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .cardP{
+        margin: 20px;
+      }
+
+    }

@@ -1,7 +1,7 @@
 .contact-form {
     max-width: 730px;
-    margin: auto;
-    margin-top: 50px;
+    margin:auto;
+    margin-top: 35px;
     margin-bottom: 75px;
   }
 
@@ -58,6 +58,7 @@
   
   @media (max-width: 768px) {
     .contact-form {
+        margin: 10px;
         margin-top: 30px;
         margin-bottom: 50px;
     }
@@ -67,5 +68,5 @@
         width: calc(100% - 16px);
     }
 
-    
+   
 }

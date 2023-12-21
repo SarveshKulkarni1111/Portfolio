@@ -11,7 +11,7 @@ const Projects = () => {
     <div className="cardP">
       <img src={project2} alt="Admin Dashboard" className="cardP-image1" />
       <div className="cardP-content">
-        <h5 className="cardP-title">Admin Dashboard</h5>
+        <h4 className="cardP-title">Admin Dashboard</h4>
         <p className="cardP-description">Developed a cloud based SaaS website with user authentication which shows the analytics of products, customers and have customizable
 charts to display daily/monthly revenue and profit, breakdown of different metrics for revenue, marketing, quality and sales.The project aimed to provide a user-friendly interface for insightful data-driven decision-
 making.</p>
