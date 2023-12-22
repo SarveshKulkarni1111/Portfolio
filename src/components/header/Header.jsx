@@ -2,7 +2,7 @@ import React from 'react'
 import "./header.css"
 import profile from "../../assets/Profile.jpg";
 import Navbar from '../navbar/Navbar';
-import Resume from "../../assets/SarveshKulkarniResume16.pdf";
+import Resume from "../../assets/Sarvesh_Kulkarni_Resume6.pdf";
 
 const Header = () => {
   return (
