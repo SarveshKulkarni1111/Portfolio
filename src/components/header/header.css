@@ -52,7 +52,7 @@ button:hover {
   .rounded-image {
     width: 50%; 
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
   .header-container {
@@ -64,14 +64,14 @@ button:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 480px) {
   .rounded-image {
         width: 70%; 
-        margin-bottom: 85px;
+        margin-bottom: 90px;
     }
 
   .header-container {
@@ -82,5 +82,5 @@ button:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 140px;  }
+    margin-top: 130px;  }
 }
