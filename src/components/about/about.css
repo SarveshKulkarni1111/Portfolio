@@ -72,6 +72,11 @@ li {
 @media (max-width: 768px) {
     .card, .card1 {
       margin: 0px; 
+      
+    }
+
+    .card1{
+      margin-top: 20px;
     }
     /* #about{
       height: 100vh;
