@@ -16,8 +16,8 @@
   border-radius: 50%;
   width: 25%;
   height: auto;
-  margin-top: 20px; 
-  margin-left: 80px;
+  margin-left: 100px;
+  margin-right: 60px;
 }
 
 /* Style the link */
@@ -51,23 +51,36 @@ button:hover {
 @media (max-width: 768px) {
   .rounded-image {
     width: 50%; 
-    margin-right: 72px;
+    margin-right: 100px;
+    margin-top: 50px;
 }
 
   .header-container {
       padding-top: 10%; 
       flex-direction: column;
   }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 480px) {
   .rounded-image {
         width: 70%; 
-        margin-top: 10px;
+        margin-bottom: 85px;
     }
 
   .header-container {
       padding-top: 5%; 
       flex-direction: column;
   }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 140px;  }
 }

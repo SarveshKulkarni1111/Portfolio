@@ -1,15 +1,15 @@
 /* Card.css */
 
-#about{
+/* #about{
   height: 75vh;
-}
+} */
 
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
     margin-top: 140px;
-    margin-left: 700px;
+    margin-left: 200px;
     margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -20,7 +20,7 @@
     border-radius: 8px;
     padding: 20px;
     margin-top: 70px;
-    margin-left: 700px;
+    margin-left: 200px;
     margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -32,6 +32,7 @@
   p {
     color: #666;
     font-size: 18px;
+    text-align: justify;
   }
   ul {
     list-style: none; /* Remove default list styles */
@@ -41,16 +42,54 @@
 }
 li {
     
-    margin-right: 20px; /* Add spacing between list items */
+    margin-right: 20px; 
     margin-left: 20px;
+}
+
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px; 
+
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 8px; 
+}
+
+.content-container1 {
+  flex: 2;
 }
 
 @media (max-width: 768px) {
     .card, .card1 {
-      margin: 20px; /* Adjust the margin for smaller screens */
+      margin: 0px; 
     }
-    #about{
+    /* #about{
       height: 100vh;
+    } */
+
+    .about-container {
+      flex-direction: column; /* Stack flex items vertically on smaller screens */
+      align-items: stretch; /* Stretch items to fill the container */
+    }
+  
+    .image-container {
+      margin-right: -12px;
+      margin-bottom: 20px; 
+
+    }
+  
+    .content-container1 {
+      flex: 1; /* Take up full width on smaller screens */
     }
   }
   
@@ -67,8 +106,8 @@ li {
         width: 25px; 
         height: 25px;
     }
-    #about{
+    /* #about{
       height: 100vh;
-    }
+    } */
   }
   
