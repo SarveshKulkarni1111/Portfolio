@@ -2,12 +2,17 @@ import React from 'react'
 import "./Projects.css";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
+import Pulse from 'react-reveal/Pulse';
+import LightSpeed from 'react-reveal/LightSpeed';
+
 
 const Projects = () => {
   return (
     <div className='margin1' id='projects'>
     <h1>Recent Projects</h1>
     <div className='project-container'>
+    <Pulse>
+    
     <div className="cardP">
       <img src={project2} alt="Admin Dashboard" className="cardP-image1" />
       <div className="cardP-content">
@@ -19,6 +24,7 @@ making.</p>
         <button className="cardP-button"><a className='cardP-button-a' href='https://sarveshkulkarni-saas-project.vercel.app/' target="_blank" rel="noopener noreferrer">Live Demo</a></button>
       </div>
     </div>
+    
     <div className="cardP">
       <img src={project1} alt="Municipal Corporation's Complaint and Grievances Management System" className="cardP-image" />
       <div className="cardP-content">
@@ -28,6 +34,7 @@ making.</p>
       </div>
     </div>
     
+    </Pulse>
     </div>
     </div>
   )

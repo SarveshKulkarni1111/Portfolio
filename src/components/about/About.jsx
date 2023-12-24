@@ -3,21 +3,30 @@ import "./about.css"
 import image2 from "../../assets/profile2.png";
 import image3 from "../../assets/profile3.jpg";
 import image4 from "../../assets/profile4.jpg";
+import Slide from 'react-reveal/Slide';
+
 
 const About = () => {
   return (
     <div id='about' className="about-container">
      <div className="image-container">
+     <Slide left cascade>
     <img src={image4} alt="profile img" />
+    </Slide>
     </div>
+    {/* <LightSpeed right cascade> */}
+    <Slide right cascade>
     <div className="content-container1">
+    
     <div className="card">
+    
     <h1>About me</h1>
     <p>I am a passionate web developer with a fascination for technology, aiming to turn my passion into a career. I possess a solid understanding of front-end development principles and frameworks, enabling me to create visually appealing and user-friendly websites.
 
 I am continually exploring new web technologies and design principles to stay at the forefront of this dynamic field. Let's build something amazing together!
 </p>
 </div>
+
 
 <div className="card1">
 <h1>Technologies</h1>
@@ -46,6 +55,7 @@ I am continually exploring new web technologies and design principles to stay at
 </ul>
 </div>
 </div>
+</Slide>
     </div>
   )
 }
