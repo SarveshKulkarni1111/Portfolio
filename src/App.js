@@ -7,6 +7,7 @@ import Projects from './components/projects/Projects';
 import Awards from './components/awards/awards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
      <Contact />
      <Footer />
      <SpeedInsights />
+     <Analytics />
     </div>
   );
 }
