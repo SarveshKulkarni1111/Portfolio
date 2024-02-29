@@ -2,7 +2,7 @@ import React from 'react';
 import "./header.css";
 import profile from "../../assets/Profile.jpg";
 import Navbar from '../navbar/Navbar';
-import Resume from "../../assets/Sarvesh_Kulkarni_Resume6.pdf";
+import Resume from "../../assets/Sarvesh_Kulkarni_Resume.pdf";
 import Typewriter from "../Typewriter";
 import Zoom from 'react-reveal/Zoom';
 
